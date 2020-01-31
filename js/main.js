@@ -4,17 +4,23 @@ let $user = document.querySelector('#user')
 let $pass = document.querySelector('#pass')
 let $signin = document.querySelector('.signin')
 let $close = document.querySelector('.close')
-let $click = document.querySelector('.click')
+let $submit = document.querySelector('.submit')
+
 
 
 // *********** UI CHANGES ***********
 // Change the display style to block for the .model
+$modal.style.display = 'block'
 // Change the display style to none for the .model 
+$modal.style.display = 'none'
 // add .error class to #user
+$user.classList.add(`error`)
 // add .error class to #pass
+$pass.classList.add(`error`)
 // Remove .error class from #user
+$user.classList.remove(`error`)
 // Remove .error class from #pass
-
+$pass.classList.remove(`error`)
 // ******** EVENT LISTENERS *********
 // Capture .signin click
 // Capture .close click
